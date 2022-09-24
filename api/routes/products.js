@@ -12,4 +12,30 @@ router.post("/", (req, res, next) => {
   });
 });
 
+router.get("/:productId", (req, res, next) => {
+  const id = req.params.productId;
+  if (id === "12") {
+    res.status(200).json({
+      message: "12 id found",
+      id: id,
+    });
+  } else {
+    res.status(200).json({
+      message: "not found 12",
+    });
+  }
+});
+
+router.patch('/:productId', (req, res, next) => {
+    res.status(200).json({
+        message:"update product"
+    })
+})
+
+router.delete('/:productId', (req, res, next) => {
+    res.status(200).json({
+        message:"Delete product"
+    })
+})
+
 module.exports = router;
