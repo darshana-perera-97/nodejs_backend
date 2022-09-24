@@ -18,5 +18,8 @@
   "homepage": "https://github.com/darshana-perera-97/nodejs_backend#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
